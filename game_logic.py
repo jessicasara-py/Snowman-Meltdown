@@ -4,6 +4,7 @@ from ascii_art import STAGES
 
 WORDS = ["python", "git", "github", "snowman", "meltdown"]
 
+
 def get_random_word():
     """Selects a random word from the list."""
     return WORDS[random.randint(0, len(WORDS) - 1)]
