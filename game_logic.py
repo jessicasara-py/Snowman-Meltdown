@@ -40,9 +40,13 @@ def play_game():
             print("Please enter a single letter.")
             continue
 
-        if guess in secret_word:
-            guessed_letters.append(guess)
-        else:
+        if guess in guessed_letters:
+            print("You already guessed that letter.")
+            continue
+
+        guessed_letters.append(guess)
+
+        if guess not in secret_word:
             mistakes += 1
             print("Wrong guess!")
 
